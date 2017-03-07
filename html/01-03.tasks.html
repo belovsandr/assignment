@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Задания 1-3 на верстку</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="01-03.tasks.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="01-03.tasks.js"></script>
+</head>
+
+<body>
+    <h1>Компонент оценки и показа рейтинга</h1>
+        <div class="rating-wrapper">
+            <input type="radio" id="rating-5star" name="rating" value="5" />
+            <label for="rating-5star" title="5 stars"></label>
+          
+            <input type="radio" id="rating-4star" name="rating" value="4" />
+            <label for="rating-4star" title="4 stars"></label>
+         
+            <input type="radio" id="rating-3star" name="rating" value="3" checked/>
+            <label for="rating-3star" title="3 stars"></label>
+         
+            <input type="radio" id="rating-2star" name="rating" value="2" />
+            <label for="rating-2star" title="2 stars"></label>
+         
+            <input type="radio" id="rating-1star" name="rating" value="1" />
+            <label for="rating-1star" title="1 star"></label>
+        </div>
+    <h1>Прогресс-бар</h1>
+        <div class="progress-wrapper">
+            <span class="progress-value"></span>
+            <progress value="16" max="100" class="progress-bar"></progress>
+        </div>
+
+        <div class="progress-wrapper">
+            <span class="progress-value"></span>
+            <progress value="6" max="100" class="progress-bar"></progress>
+        </div>
+
+        <div class="progress-wrapper">
+            <span class="progress-value"></span>
+            <progress value="100" max="100" class="progress-bar"></progress>
+        </div>
+
+        <div class="progress-wrapper">
+            <span class="progress-value"></span>
+            <progress value="0" max="100" class="progress-bar"></progress>
+        </div>
+
+    <h1>Кнопки</h1>
+        <h2>Обычные</h2>
+            <a href="#" class="btn btn-normal">Кнопка</a>
+            <div class="btn btn-normal">Кнопка</div>
+            <input type="submit" class="btn btn-normal" value="Кнопка"></input>
+            <input type="button" class="btn btn-normal" value="Кнопка"></input>
+        <h2>Маленькие</h2>
+            <a href="#" class="btn btn-small">Кнопка</a>
+            <div class="btn btn-small">Кнопка</div>
+            <input type="submit" class="btn btn-small" value="Кнопка"></input>
+            <input type="button" class="btn btn-small" value="Кнопка"></input>
+        <h2>Большие</h2>
+            <a href="#" class="btn btn-big">Кнопка</a>
+            <div class="btn btn-big">Кнопка</div>
+            <input type="submit" class="btn btn-big" value="Кнопка"></input>
+            <input type="button" class="btn btn-big" value="Кнопка"></input>
+
+</body>
+</html>

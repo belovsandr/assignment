@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>рактическое задание 2</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="07.practice.02.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="07.practice.02.js"></script>
+</head>
+<body>
+    <input type="button" class="sm-file" value="Маленький файл">
+    <input type="button" class="bg-file" value="Большой файл">
+    <div class="main-wrapper">
+        <input type="text" class="filter">
+        <table id="task-table" class="table-sort">
+            <tr>
+                <th>id</th>
+                <th>firstName</th>
+                <th>lastName</th>
+                <th>email</th>
+                <th>phone</th>
+                <th>streetAdress</th>
+                <th>city</th>
+                <th>state</th>
+                <th>zip</th>
+                <th>description</th>
+            </tr>
+        </table>
+        <input type="button" class="prev" value="Previous"> 
+        <input type="button" class="next" value="Next">
+    </div>
+
+    <div class="loading">
+        <p>Идет загрузка, подождите...</p>
+    </div>
+
+    <div class="info">
+        <p>Выбран пользователь <b><span class="info-first-name"></span><span class="info-last-name"></span></b>
+        <p>Описание</p>
+        <textarea class="info-description"></textarea>
+        <p>Адрес проживания: <b><span class="info-adress"></span></b></p>
+        <p>Город: <b><span class="info-city"></span></b></p>
+        <p>Провинция/штат: <b><span class="info-state"></span></b></p>
+        <p>Индекс: <b><span class="info-zip"></span></b></p>
+    </div>
+
+</body>
+</html>

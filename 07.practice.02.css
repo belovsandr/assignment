@@ -1,0 +1,26 @@
+.filter {
+    margin: 10px; 
+}
+table,td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+th {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.info {
+    margin: 20px;
+    display: none;
+}
+
+.main-wrapper {
+    display: none;
+}
+
+.loading {
+    display: none;
+}
