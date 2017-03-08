@@ -1,3 +1,5 @@
+UPD 08.03.17 - были произведены изменения в коде.
+
 Операционная система - Windows 10 (Ubuntu на локальной машине), IDE - Sublime Text 2, браузеры - Chrome, Firefox, Safari, Edge, Internet Explorer, Opera
 Тестирование - консоль разработчика в браузерах (разные размеры экрана), w3c Markup Validation service, csslint, jslint
 

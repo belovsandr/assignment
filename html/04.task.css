@@ -2,31 +2,29 @@ body {
     font-family: Helvetica, Arial, Sans-Serif;
 }
 
-.wrapper-container {
-    max-width: 1024px;
-    margin: auto;
-}
+/*Навигация*/
 
 .nav-section {
-    text-align: right;
-    margin: auto;
     max-width: 1024px;
+    margin: auto;
     margin-bottom: 40px;
     margin-top: 40px;
+    text-align: right;
 }
 
 .navigation {
     display: inline-block;
-    background: white;
-    border-radius: 20px;
-    padding: 10px 10px 10px 10px;
     max-width: 786px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    background: white;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
 }
 
 .navigation ul {
     text-align: center;
     list-style-type: none;
+    padding-left: 0px;
 }
 
 .navigation li {
@@ -58,47 +56,56 @@ body {
     color: #b60700;
 }
 
+/*Основной контейнер*/
+
 .main-container {
-    display: table;
     max-width: 1024px;
     margin: auto;
 }
 
+/*Левая колонка с описанием сайта*/
+
 .aside-info {
-    display: table-cell;
+    float: left;
+    vertical-align: top;
     width: 200px;
-    margin-right: 40px;
+    margin: 0px 40px;
 }
+
+/*Правая колонка с информацией о пользователе*/
 
 .input-container {
-    display: table-cell;
+    overflow: hidden;
+
 }
+
+/*Пошаговый индикатор заказа билетов*/
 
 .form-progress{
-    display: table;
-        height: 80px;
+    margin-bottom: 20px;
+
+    overflow: hidden;
 }
 
-.form-progress p{
-    display: inline-block;
-
+.progress-header {
+    float: left;
+    width: 145px;
+    margin-right: 20px;
 }
 
 .progress-bar {
-    box-sizing: border-box;
-    display: table-cell;
-    width: 80%;
+    margin-top: 20px;
+    overflow: hidden;
 }
 
 .progress {
     box-sizing: border-box;
-    width: 15%;
-    display: inline;
+    display: inline-block;
+    width: 18%;
     text-align: center;
     font-style: italic;
     font-size: 0.8em;
     color: white;
-    padding: 0px 30px;
     box-shadow: inset 0px 2px 2px 0px rgba(0,0,0,0.35);
 }
 
@@ -123,16 +130,11 @@ body {
     border-radius: 0px 20px 20px 0px;    
 }
 
+/*Информация о пользователе*/
+
 .input-data {
     border: none;
     border-top: 1px solid #cacaca;
-    text-align: justify;
-}
-
-.input-data:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
 }
 
 .input-data legend{
@@ -141,11 +143,11 @@ body {
 }
 
 .input-wrapper {
-    width: 200px;
     display: inline-block;
+    width: 200px;
     margin-bottom: 25px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .input-text {
@@ -154,28 +156,27 @@ body {
 
 .input-data-label {
     display: block;
-    font-weight: bold;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .radio-btn-input {
     display: none;
 }
 
-
 .radio-btn-input + .radio-btn-label {
-    color:black;
     border-bottom: 1px dotted #000;
     text-decoration: none;
     cursor:pointer;
+    color:black;
 }
 
 .radio-btn-input:checked + .radio-btn-label {
+    padding: 2px 5px;
+    outline: none;
+    text-decoration: none;
     border: none;
     border-radius: 8px;
-    outline: none;
-    padding: 2px 5px;
-    text-decoration: none;
     background: #8cb903;
     color: white;
 }
@@ -187,9 +188,11 @@ body {
 }
 
 .input-hint {
-    color: #9191a8;
     font-size: 0.9em;
+    color: #9191a8;
 }
+
+/*Кнопки "Назад" и "Вперед""*/
 
 .btn {
     display: inline-block;
@@ -241,9 +244,9 @@ body {
 }
 
 .btn-prev::before {
-    content: "\02190";
     position: relative;
     top: -2px;
+    content: "\02190";
 }
 
 .btn-next::after {
@@ -254,24 +257,70 @@ body {
     background-color: #f2f2f2;
 }
 
+.aside-info-small {
+    display: none;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+/*Отображение страницы для разной ширины экрана*/
+
 @media only screen and (max-width: 767px) {
     .aside-info {
         display: none;
     }
+    .aside-info-small {
+        display: block;
+    }
+    .input-container {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .input-wrapper {
+        display: block;
+        width: 95%;
+        box-sizing: border-box; 
+        text-align: center;      
+    }
 }
 
 @media only screen and (max-width: 479px) {
+    .nav-section {
+        margin-top: 0px;
+    }
     .progress-header {
         display: none;
     }
     .navigation li {
         display: block;
     }
-
+    .nav-section {
+        text-align: center;
+    }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 319px) {
     .form-progress {
         display: none;
+    }
+    .button-field {
+        text-align: center;
+    }
+    .btn-prev, .btn-next {
+        float: none;
+    }
+    .input-wrapper, .input-wrapper select, .btn, .aside-info-small{
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 215px) {
+    .input-wrapper, .input-wrapper select, .btn{
+        width: 50vw;
+    }
+    .btn {
+        padding: 0;
     }
 }

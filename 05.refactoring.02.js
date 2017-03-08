@@ -1,7 +1,7 @@
 ﻿"use strict";
 
 // Yor code here ...
-//Ваш код реализации функции dscount
+//Выставление рейтинга
 // ... //
 function findScore(vote) {
     let score = Math.ceil(vote / 20);

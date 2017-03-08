@@ -1,179 +1,174 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Задание 4 на верстку</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="04.task.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="04.task.js"></script>
-</head>
-
-<body>  
-    <section class="nav-section">
-        <nav class="navigation">
-            <ul>
-                <li><a href="#" class="personal-account">Личный кабинет</a></li>
-                <li><a href="#" class="section-1">Раздел 1</a></li>
-                <li><a href="#" class="section-2">Раздел 2</a></li>
-                <li><a href="#" class="section-3">Раздел 3</a></li>
-                <li><a href="#" class="section-4">Раздел 4</a></li>
-                <li><a href="#" class="section-5">Раздел 5</a></li>
-            </ul>
-        </nav>
-    </section>
-
-
-<section class="main-container">
-    <aside class="aside-info">
-        <p>TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
-        <p>Наша цель проста - делать наших клиентов счастливыми, а их путшествия незабываемыми. Любое путшествие начинается с поиска подходящих
-         билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному
-        контакт-центру.</p>
-    </aside>
-    <section class="input-container">
-        <section class="form-progress">
-        <header class="progress-header"><h1>Заполните форму</h1></header>
-        <section class="progress-bar">
-            <div class="progress progress-done progress-first">1</div>
-            <div class="progress progress-done">2</div>
-            <div class="progress progress-current">3</div>
-            <div class="progress progress-next">4</div>
-            <div class="progress progress-next progress-last">5</div>
+    <head>
+        <title>Задание 4 на верстку</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="04.task.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="04.task.js"></script>
+    </head>
+    <body>
+        <!-- Навигационная шапка -->
+        <section class="nav-section">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" class="personal-account">Личный кабинет</a></li>
+                    <li><a href="#" class="section-1">Раздел 1</a></li>
+                    <li><a href="#" class="section-2">Раздел 2</a></li>
+                    <li><a href="#" class="section-3">Раздел 3</a></li>
+                    <li><a href="#" class="section-4">Раздел 4</a></li>
+                    <li><a href="#" class="section-5">Раздел 5</a></li>
+                </ul>
+            </nav>
         </section>
-    </section>
-    <form class="input-info">
-        <fieldset class="input-data">
-            <legend>Общая информация</legend>
-            <div class="input-wrapper">
-                <label for="last-name" class="input-data-label">Фамилия</label>
-                <input type="text" id="last-name" class="input-text">
-            </div>
+        <!-- Контейнер из двух колонок -->
+        <section class="main-container">
+            <aside class="aside-info">
+                <p>TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+                <p>Наша цель проста - делать наших клиентов счастливыми, а их путшествия незабываемыми. Любое путшествие начинается с поиска подходящих
+                    билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному
+                    контакт-центру.
+                </p>
+            </aside>
+            <section class="input-container">
+                <section class="form-progress">
+                    <header class="progress-header">
+                        <h1>Заполните форму</h1>
+                    </header>
+                    <section class="progress-bar">
+                        <span class="progress progress-done progress-first">1</span>
+                        <div class="progress progress-done">2</div>
+                        <div class="progress progress-current">3</div>
+                        <div class="progress progress-next">4</div>
+                        <div class="progress progress-next progress-last">5</div>
+                    </section>
+                </section>
+                <form class="input-info">
+                    <fieldset class="input-data">
+                        <legend>Общая информация</legend>
+                        <div class="input-wrapper">
+                            <label for="last-name" class="input-data-label">Фамилия</label>
+                            <input type="text" id="last-name" class="input-text">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="first-name" class="input-data-label">Имя</label>
+                            <input type="text" id="first-name" class="input-text">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="patronymic" class="input-data-label">Отчество</label>
+                            <input type="text" id="patronymic" class="input-text">
+                        </div>
+                        <div class="input-wrapper">
+                            <label class="input-data-label">Меняли фамилию?</label>
+                            <input type="radio" name="last-name-change" class="radio-btn-input" id="radio-last-name-yes" value="Да">
+                            <label for="radio-last-name-yes" class="radio-btn-label">Да</label>
+                            <input type="radio" name="last-name-change" class="radio-btn-input" id="radio-last-name-no" value="Нет" checked>
+                            <label for="radio-last-name-no" class="radio-btn-label">Нет</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <label class="input-data-label">Пол</label>
+                            <input type="radio" name="gender" value="Муж" id="radio-gender-male" class="radio-btn-input" checked>
+                            <label for="radio-gender-male" class="radio-btn-label">Муж</label>
+                            <input type="radio" name="gender" value="Жен" id="radio-gender-female" class="radio-btn-input">
+                            <label for="radio-gender-female" class="radio-btn-label">Жен</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="relationship" class="input-data-label">Семейное положение</label>
+                            <select id="relationship">
+                                <option value="taken" selected>Женат / Замужем</option>
+                                <option value="not-taken">Холост / Не замужем</option>
+                            </select>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="citizenship" class="input-data-label">Гражданство</label>
+                            <select id="citizenship">
+                                <option value="taken" selected>Российская Федерация</option>
+                                <option value="not-taken">Украина</option>
+                                <option value="not-taken">Белоруссия</option>
+                                <option value="not-taken">Казахстан</option>
+                            </select>
+                        </div>
+                        <div class="input-wrapper">
+                            <label class="input-data-label">Дата рождения</label>
+                            <div>
+                                <select id="day">
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11" selected>11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                </select>
+                                <select id="month">
+                                    <option value="January">Январь</option>
+                                    <option value="February">Февраль</option>
+                                    <option value="March">Март</option>
+                                    <option value="April">Апрель</option>
+                                    <option value="May">Май</option>
+                                    <option value="June selected">Июнь</option>
+                                    <option value="July">Июль</option>
+                                    <option value="August">Август</option>
+                                    <option value="September">Сентябрь</option>
+                                    <option value="October">Октябрь</option>
+                                    <option value="November">Ноябрь</option>
+                                    <option value="December">Декабрь</option>
+                                </select>
+                                <select id="year">
+                                    <option value="1973">1973</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1970" selected>1970</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1968">1968</option>
+                                </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-wrapper input-birthplace">
+                            <label for="birthplace" class="input-data-label">Место рождения</label>
+                            <input type="text" id="birthplace" class="input-text">
+                            <p class="input-hint">Например, Россия, Комсомольск-на-Амуре</p>
+                        </div>
 
-            <div class="input-wrapper">
-                <label for="first-name" class="input-data-label">Имя</label>
-                <input type="text" id="first-name" class="input-text">
-            </div>
-
-            <div class="input-wrapper">
-                <label for="patronymic" class="input-data-label">Отчество</label>
-                <input type="text" id="patronymic" class="input-text">
-            </div>
-
-            <div class="input-wrapper">
-                <label class="input-data-label">Меняли фамилию?</label>
-                <input type="radio" name="last-name-change" class="radio-btn-input" id="radio-last-name-yes" value="Да">
-                <label for="radio-last-name-yes" class="radio-btn-label">Да</label>
-                <input type="radio" name="last-name-change" class="radio-btn-input" id="radio-last-name-no" value="Нет" checked>
-                <label for="radio-last-name-no" class="radio-btn-label">Нет</label>
-            </div>
-
-            <div class="input-wrapper">
-                <label class="input-data-label">Пол</label>
-                <input type="radio" name="gender" value="Муж" id="radio-gender-male" class="radio-btn-input" checked>
-                <label for="radio-gender-male" class="radio-btn-label">Муж</label>
-                <input type="radio" name="gender" value="Жен" id="radio-gender-female" class="radio-btn-input">
-                <label for="radio-gender-female" class="radio-btn-label">Жен</label>
-            </div>
-
-            <div class="input-wrapper">
-                <label for="relationship" class="input-data-label">Семейное положение</label>
-                <select id="relationship">
-                    <option value="taken" selected>Женат / Замужем</option>
-                    <option value="not-taken">Холост / Не замужем</option>
-                </select>
-            </div>
-            
-            <div class="input-wrapper">
-                <label for="citizenship" class="input-data-label">Гражданство</label>
-                <select id="citizenship">
-                    <option value="taken" selected>Российская Федерация</option>
-                    <option value="not-taken">Украина</option>
-                    <option value="not-taken">Белоруссия</option>
-                    <option value="not-taken">Казахстан</option>
-                </select>
-            </div>
-            
-            <div class="input-wrapper">
-                <label class="input-data-label">Дата рождения</label>
-                <div>
-                <select id="day">
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                    <option value="04">04</option>
-                    <option value="05">05</option>
-                    <option value="06">06</option>
-                    <option value="07">07</option>
-                    <option value="08">08</option>
-                    <option value="09">09</option>
-                    <option value="10">10</option>
-                    <option value="11" selected>11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                </select>
-                <select id="month">
-                    <option value="January">Январь</option>
-                    <option value="February">Февраль</option>
-                    <option value="March">Март</option>
-                    <option value="April">Апрель</option>
-                    <option value="May">Май</option>
-                    <option value="June selected">Июнь</option>
-                    <option value="July">Июль</option>
-                    <option value="August">Август</option>
-                    <option value="September">Сентябрь</option>
-                    <option value="October">Октябрь</option>
-                    <option value="November">Ноябрь</option>
-                    <option value="December">Декабрь</option>
-                </select>
-                <select id="year">
-                    <option value="1973">1973</option>
-                    <option value="1972">1972</option>
-                    <option value="1971">1971</option>
-                    <option value="1970" selected>1970</option>
-                    <option value="1969">1969</option>
-                    <option value="1968">1968</option>
-                </select>
-                </label>
-                </div>
-            </div>
-
-            <div class="input-wrapper input-birthplace">
-                <label for="birthplace" class="input-data-label">Место рождения</label>
-                <input type="text" id="birthplace" class="input-text">
-                <p class="input-hint">Например, Россия, Комсомольск-на-Амуре</p>
-            </div>
-            
-        </fieldset>
-        <section class="button-field">
-            <a href="https://yandex.ru/" class="btn btn-big btn-prev"> Назад</a>
-            <button type="submit" class="btn btn-big btn-next">Вперед </button>
+                        <section class="button-field">
+                            <a href="https://yandex.ru/" class="btn btn-big btn-prev"> Назад</a>
+                            <button type="submit" class="btn btn-big btn-next">Вперед </button>
+                        </section>
+                    </fieldset>
+                </form>
+            </section>
         </section>
-        </form>
-
-    </section>
-
-    </section>
-            
-
-        
-   
-</body>
+        <aside class="aside-info-small">
+                <p>TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+                <p>Наша цель проста - делать наших клиентов счастливыми, а их путшествия незабываемыми. Любое путшествие начинается с поиска подходящих
+                    билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному
+                    контакт-центру.
+                </p>
+            </aside>
+    </body>
 </html>

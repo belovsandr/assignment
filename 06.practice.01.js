@@ -1,7 +1,7 @@
 ﻿"use strict";
 
 // Yor code here ...
-//Ваш код реализации функции dscount
+//Парсинг URL-строки
 // ... //
 
 function parseUrl(urlString) {

@@ -1,3 +1,5 @@
+/*Компонент оценки и показа рейтинга*/
+
 .rating-wrapper {
     display: inline-block;
     border: 0;
@@ -30,6 +32,8 @@
 .rating-wrapper label:hover ~ input:checked ~ label {
     color: #ffea00;
 }
+
+/*Прогресс-бар*/
 
 .progress-wrapper{
     display: inline-block;
@@ -96,6 +100,8 @@
     top: 17px;
 }*/
 
+/*Кнопка*/
+
 .btn {
     display: inline-block;
     margin: 5px;
@@ -109,9 +115,9 @@
 }
 
 .btn:hover {
-    cursor: pointer;
     background: #f3f3f3;
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+    cursor: pointer;
 }
 
 .btn:active {

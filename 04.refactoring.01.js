@@ -1,7 +1,7 @@
 ﻿"use strict";
 
 // Yor code here ...
-//Ваш код реализации функции dscount
+//Нахождение позиции самого дальнего из двух символов
 function findLastCharIndex(originalStr, frstChar, scndChar) {
     let frstCharIndex = originalStr.lastIndexOf(frstChar);
     let scndCharIndex = originalStr.lastIndexOf(scndChar);

@@ -1,6 +1,17 @@
+/*Основной контейнер*/
+
+.main-wrapper {
+    display: none;
+}
+
+/*Строка фильтрации*/
+
 .filter {
     margin: 10px; 
 }
+
+/*Таблица*/
+
 table,td,th {
     border: 1px solid black;
     border-collapse: collapse;
@@ -12,14 +23,14 @@ th {
     cursor: pointer;
 }
 
+/*Информация о клиенте при нажатии на строку*/
+
 .info {
-    margin: 20px;
     display: none;
+    margin: 20px;
 }
 
-.main-wrapper {
-    display: none;
-}
+/*Сообщение при загрузке файла*/
 
 .loading {
     display: none;
