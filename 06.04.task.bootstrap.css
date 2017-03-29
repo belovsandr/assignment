@@ -1,0 +1,590 @@
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 19%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+body {
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+/*Навигация*/
+
+.navigation-wrapper {
+    margin: 30px 0 10px 0;
+}
+
+.navigation {
+    padding: 10px 25px 10px 25px;
+    margin-bottom: 40px;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: white;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+}
+
+.navigation ul {
+    padding: 0;
+
+    list-style-type: none;
+
+    text-align: center;
+}
+
+.navigation li {
+    display: inline-block;
+
+    margin: 0 15px;
+}
+
+.navigation__link:hover {
+    text-decoration: none;
+}
+
+/*Стили навигационных кнопок*/
+
+.navigation__link_personal-account {
+    color: #4900c3;
+}
+
+.navigation__link_section-1 {
+    color: #14731b;
+}
+
+.navigation__link_section-2 {
+    color: #0e73d9;
+}
+
+.navigation__link_section-3 {
+    color: #dd4c00;
+}
+
+.navigation__link_section-4 {
+    color: #333333;
+}
+
+.navigation__link_section-5 {
+    color: #b60700;
+}
+
+/*Основной контейнер*/
+
+.main-container {
+
+}
+
+/*Левая колонка с описанием сайта*/
+
+.website-info {
+    font: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+
+.website-info p {
+    margin-bottom: 50px;
+}
+
+/*Правая колонка с информацией о пользователе*/
+
+.input-container {
+    
+}
+
+/*Пошаговый индикатор заказа билетов*/
+
+.progress_nb {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin: 0 0 30px 0;
+
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+/*Заголовок прогрессбара*/
+
+.progress__header {
+    margin: -15px 30px 0 0;
+}
+
+.progress__header p{
+    font-size: 1.5rem;
+}
+
+/*Прогрессбар*/
+
+.progress__bar {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+/*Индикатор прогрессбара*/
+
+.progressbar__block {
+    font: italic 1rem Helvetica, Arial, Sans-Serif;
+
+    box-sizing: border-box;
+    height: 15px;
+    margin: 0 1px 0 0;
+
+    text-align: center;
+
+    color: white;
+    -webkit-box-shadow: inset 0 2px 2px 0 rgba(0,0,0,.35);
+    -moz-box-shadow: inset 0 2px 2px 0 rgba(0,0,0,.35);
+    box-shadow: inset 0 2px 2px 0 rgba(0,0,0,.35);
+
+    -webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+}
+
+/*Стили индикаторов*/
+
+.progressbar__block_done {
+    background: #39a518;
+}
+
+.progressbar__block_current {
+    background: #9fd206;
+}
+
+.progressbar__block_next {
+    background: #f6f6f6;
+    color: black;
+}
+
+.progressbar__block_first {
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.progressbar__block_last {
+    margin: 0;
+
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+/*Информация о пользователе*/
+
+.form-info {
+    position: relative;
+}
+
+.fieldset-data {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding-top: 15px;
+
+    border: none;
+    border-top: 1px solid #cacaca;
+
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.fieldset-data__legend {
+    position: absolute;
+    top: -10px;
+
+    padding-right: 15px;
+
+    font-style: italic;
+
+    color: #666;
+    background-color: white;
+}
+
+.input-data {
+    margin: 15px 20px 15px 0;
+
+    -webkit-flex: 1 1 200px;
+    -ms-flex: 1 1 200px;
+    flex: 1 1 200px;
+}
+
+.input-data__text {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.input-data__label {
+    font-weight: bold;
+
+    display: block;
+
+    margin: 0 0 10px 0;
+}
+
+.empty-flex {
+    height: 0;
+    margin: 0 20px 0 0;
+
+    -webkit-flex: 1 1 200px;
+    -ms-flex: 1 1 200px;
+    flex: 1 1 200px;
+}
+
+/*Кнопка на выбор из двух вариантов (Меняли фамлию?, Пол)*/
+
+.radio-btn-input {
+    display: none;
+}
+
+.radio-btn-label {
+    font-weight: normal;
+}
+
+.radio-btn-input + .radio-btn-label {
+    cursor: pointer;
+    text-decoration: none;
+
+    color: black;
+    border-bottom: 1px dotted #000;
+}
+
+.radio-btn-input:checked + .radio-btn-label {
+    padding: 2px 5px;
+
+    text-decoration: none;
+
+    color: white;
+    border: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    outline: none;
+    background: #8cb903;
+}
+
+.input-birthplace {
+    -webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+}
+
+.input-hint {
+    font-size: .9rem;
+
+    color: #9191a8;
+}
+
+/*Кнопки "Назад" и "Вперед""*/
+
+.input-buttons {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    background-color: #f2f2f2;
+
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.btn_nb {
+    margin: 15px;
+
+    text-decoration: none;
+    text-align: center;
+
+    border: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    outline: none;
+
+    color: white;
+    background: #8cb903;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.3);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.3);
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.3);
+}
+
+.btn_nb:hover {
+    cursor: pointer;
+
+    text-decoration: none;
+
+    color: black;
+    background: #f3f3f3;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.45);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,.45);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.45);
+}
+
+.btn_nb:active {
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
+
+    background: #f0f0f0;
+    -webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,.75);
+    -moz-box-shadow: 0 2px 1px 0 rgba(0,0,0,.75);
+    box-shadow: 0 2px 1px 0 rgba(0,0,0,.75);
+}
+
+.btn_nb-normal {
+    font: 1rem Arial, serif;
+
+    padding: 5px 20px;
+}
+
+.btn_nb-small {
+    font: .7rem Arial, serif;
+
+    padding: 3px 10px;
+}
+
+.btn_nb-big {
+    font: 1.2rem Arial, serif;
+
+    padding: 10px 30px;
+}
+
+.btn_nb-prev {
+    background-color: #a1a1a1;
+}
+
+.btn_nb-next {
+
+}
+
+.btn_nb-prev::before {
+    position: relative;
+    top: -2px;
+
+    content: '\02190';
+}
+
+.btn_nb-next::after {
+    content: '\02192';
+}
+
+/*Информация о сайте внизу сайта*/
+
+.website-info_small {
+    font-size: .7rem;
+
+    display: none;
+
+    text-align: center;
+}
+
+
+/*Отображение страницы для разной ширины экрана*/
+
+/*@media only screen and (max-width: 767px) {
+    .navigation-wrapper {
+        margin: 20px auto;
+    }
+
+    .navigation {
+        padding: 10px 5px 10px 5px;
+    }
+    .navigation li {
+        margin-top: 10px;
+    }
+    .website-info {
+        display: none;
+    }
+
+    .main-container {
+        margin: 0 10px 0 10px;
+    }
+
+    .progress {
+        margin: 0 20px 15px 20px;
+    }
+
+    .input-data {
+        margin: 15px 5px 15px 5px;
+    }
+
+    .empty-flex {
+        margin: 0 5px 0 5px;    
+    }
+
+    .website-info_small {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .navigation-wrapper {
+        margin: 0;
+
+        text-align: center;
+    }
+
+    .navigation li {
+        display: block;
+        margin: 0;
+    }
+
+    .progress {
+        margin: 30px 10px 30px 10px;
+    }
+
+    .progress__header {
+        display: none;
+    }
+
+    .btn {
+        margin: 5px;
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 319px) {
+
+    .navigation-wrapper {
+        margin: 0 0 25px 0;
+    }
+
+    .progress {
+        display: none;
+    }
+
+    .fieldset-data {
+        padding-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .fieldset-data__legend {
+        display: none;
+    }
+
+    .input-data,
+    .input-data select,
+    .website-info_small,
+    .btn {
+        font-size: 5vw;
+    }
+
+    .input-data {
+        margin: 10px 0 10px 0;
+    }
+
+    .input-hint {
+        display: none;
+    }
+
+    .input-buttons {
+        box-sizing: border-box;
+
+        padding: 5px;
+
+        text-align: center;
+    }
+
+    .input-buttons,
+    .btn-big {
+        display: block;
+    }
+
+    .btn-prev {
+        margin: 0 0 10px 0;
+    }
+
+    .btn-next {
+        margin: 0;
+    }
+
+    .btn-next {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .btn-big {
+        padding: 5px 20px;
+    }
+}
+
+@media only screen and (max-width: 219px) {
+    .navigation-wrapper {
+        margin: 0 0 10px 0;
+    }
+
+    .navigation,
+    .input-data,
+    .input-data select,
+    .website-info_small,
+    .btn {
+        font-size: 8vw;
+    }
+
+    .navigation {
+        padding: 0;
+    }
+
+    .navigation li {
+        margin: 0;
+    }
+
+    .main-container {
+        margin: 0;
+    }
+
+    .input-data {
+        width: 35vw;
+    }
+
+    .input-data__date {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .btn {
+        padding: 0;
+    }
+}*/

@@ -4,27 +4,29 @@ body {
 
 /*Навигация*/
 
-.nav-section {
+.navigation-wrapper {
     max-width: 1024px;
-    margin: auto;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin: 40px auto;
     text-align: right;
 }
 
 .navigation {
     display: inline-block;
-    max-width: 786px;
+    width: 690px;
     padding: 10px 10px 10px 10px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
     border-radius: 20px;
     background: white;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
 }
 
 .navigation ul {
+    padding: 0px;
     text-align: center;
     list-style-type: none;
-    padding-left: 0px;
 }
 
 .navigation li {
@@ -32,27 +34,31 @@ body {
     margin: 0px 15px;
 }
 
-.personal-account {
+.navigation__link:hover {
+    text-decoration: none;
+}
+
+.navigation__link_personal-account {
     color: #4900c3;
 }
 
-.section-1 {
+.navigation__link_section-1 {
     color: #14731b;
 }
 
-.section-2 {
+.navigation__link_section-2 {
     color: #0e73d9;
 }
 
-.section-3 {
+.navigation__link_section-3 {
     color: #dd4c00;
 }
 
-.section-4 {
+.navigation__link_section-4 {
     color: #333333;
 }
 
-.section-5 {
+.navigation__link_section-5 {
     color: #b60700;
 }
 
@@ -65,7 +71,7 @@ body {
 
 /*Левая колонка с описанием сайта*/
 
-.aside-info {
+.website-info {
     float: left;
     vertical-align: top;
     width: 200px;
@@ -76,29 +82,26 @@ body {
 
 .input-container {
     overflow: hidden;
-
 }
 
 /*Пошаговый индикатор заказа билетов*/
 
-.form-progress{
-    margin-bottom: 20px;
-
-    overflow: hidden;
-}
-
-.progress-header {
-    float: left;
-    width: 145px;
-    margin-right: 20px;
-}
-
-.progress-bar {
-    margin-top: 20px;
-    overflow: hidden;
-}
-
 .progress {
+    margin: 0 0 20px 20px;
+    overflow: hidden;
+}
+
+.progress__header {
+    float: left;
+    margin: 0 20px;
+}
+
+.progress__bar {
+    margin: 20px 0 0 0;
+    overflow: hidden;
+}
+
+.progressbar__block {
     box-sizing: border-box;
     display: inline-block;
     width: 18%;
@@ -106,57 +109,63 @@ body {
     font-style: italic;
     font-size: 0.8em;
     color: white;
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(0,0,0,0.35);
     box-shadow: inset 0px 2px 2px 0px rgba(0,0,0,0.35);
 }
 
-.progress-done {
+.progressbar__block_done {
     background: #39a518;
 }
 
-.progress-current {
+.progressbar__block_current {
     background: #9fd206;
 }
 
-.progress-next {
+.progressbar__block_next {
     background: #f6f6f6;
     color: black;
 }
 
-.progress-first {
-    border-radius: 20px 0px 0px 20px;
+.progressbar__block_first {
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 0px 0px 5px;
 }
 
-.progress-last {
-    border-radius: 0px 20px 20px 0px;    
+.progressbar__block_last {
+    -moz-border-radius: 0px 5px 5px 0px;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 5px 5px 0px;    
 }
 
 /*Информация о пользователе*/
 
-.input-data {
+.fieldset-data {
     border: none;
     border-top: 1px solid #cacaca;
 }
 
-.input-data legend{
+.fieldset-data legend{
     font-style: italic;
     color: #666666;
 }
 
-.input-wrapper {
+.input-data {
     display: inline-block;
-    width: 200px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 25%;
+    min-width: 190px;
+    margin: 10px 20px 25px 10px;
 }
 
-.input-text {
+.input-data__text {
+    box-sizing: border-box;
     width: 100%;
 }
 
-.input-data-label {
+.input-data__label {
     display: block;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     font-weight: bold;
 }
 
@@ -167,8 +176,8 @@ body {
 .radio-btn-input + .radio-btn-label {
     border-bottom: 1px dotted #000;
     text-decoration: none;
-    cursor:pointer;
-    color:black;
+    cursor: pointer;
+    color: black;
 }
 
 .radio-btn-input:checked + .radio-btn-label {
@@ -176,15 +185,17 @@ body {
     outline: none;
     text-decoration: none;
     border: none;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
     border-radius: 8px;
     background: #8cb903;
     color: white;
 }
 
 .input-birthplace {
+    box-sizing: border-box;
     display: block;
     width: 95%;
-    box-sizing: border-box;
 }
 
 .input-hint {
@@ -194,21 +205,31 @@ body {
 
 /*Кнопки "Назад" и "Вперед""*/
 
+.input-buttons {
+    background-color: #f2f2f2;
+}
+
 .btn {
     display: inline-block;
     margin: 5px;
     border: none;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
     border-radius: 30px;
     outline: none;
     text-decoration: none;
     background: #8cb903;
     color: white;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
 }
 
 .btn:hover {
     cursor: pointer;
     background: #f3f3f3;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.45);
     color: black;
 }
@@ -216,6 +237,8 @@ body {
 .btn:active {
     transform: translateY(1px);
     background: #f0f0f0;
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.75);    
 }
 
@@ -253,11 +276,7 @@ body {
     content: "\02192";
 }
 
-.button-field {
-    background-color: #f2f2f2;
-}
-
-.aside-info-small {
+.website-info_small {
     display: none;
     font-size: 0.7em;
     text-align: center;
@@ -266,10 +285,14 @@ body {
 /*Отображение страницы для разной ширины экрана*/
 
 @media only screen and (max-width: 767px) {
-    .aside-info {
+    .navigation {
+        width: auto;
+        max-width: 690px;
+    }
+    .website-info {
         display: none;
     }
-    .aside-info-small {
+    .website-info_small {
         display: block;
     }
     .input-container {
@@ -278,46 +301,57 @@ body {
 }
 
 @media only screen and (max-width: 505px) {
-    .input-wrapper {
-        display: block;
-        width: 95%;
+    .input-data {
         box-sizing: border-box; 
-        text-align: center;      
+        display: block;
+        width: 95%;     
     }
-}
-
-@media only screen and (max-width: 479px) {
-    .nav-section {
-        margin-top: 0px;
+    .navigation-wrapper {
+        margin: 0;
     }
-    .progress-header {
+    .progress__header {
         display: none;
     }
     .navigation li {
         display: block;
     }
-    .nav-section {
+    .navigation-wrapper {
         text-align: center;
+    }
+    .btn{
+        box-sizing: border-box;
+        width: 36vw;
+        font-size: 4vw;
     }
 }
 
 @media only screen and (max-width: 319px) {
-    .form-progress {
+    .progress {
         display: none;
     }
-    .button-field {
+    .navigation-wrapper {
+        margin: 0 0 40px 0;
+    }
+    .input-buttons {
         text-align: center;
     }
     .btn-prev, .btn-next {
         float: none;
     }
-    .input-wrapper, .input-wrapper select, .btn, .aside-info-small{
+    .input-data, .input-data select, .btn, .website-info_small{
         font-size: 5vw;
+    }
+    .btn {
+        width: auto;
+    }
+    .input-data {
+        min-width: auto;
+        margin: 10px 10px 25px 10px;
     }
 }
 
-@media only screen and (max-width: 215px) {
-    .input-wrapper, .input-wrapper select, .btn{
+@media only screen and (max-width: 219px) {
+    .input-data, .input-data select, .btn{
         width: 50vw;
     }
     .btn {

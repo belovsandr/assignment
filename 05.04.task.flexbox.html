@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание 4 на верстку</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="05.04.task.flexbox.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="05.04.task.flexbox.js"></script>
+    </head>
+    <body>
+        <!-- Навигационная шапка -->
+        <section class="navigation-wrapper">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" class="navigation__link navigation__link_personal-account">Личный кабинет</a></li>
+                    <li><a href="#" class="navigation__link navigation__link_section-1">Раздел 1</a></li>
+                    <li><a href="#" class="navigation__link navigation__link_section-2">Раздел 2</a></li>
+                    <li><a href="#" class="navigation__link navigation__link_section-3">Раздел 3</a></li>
+                    <li><a href="#" class="navigation__link navigation__link_section-4">Раздел 4</a></li>
+                    <li><a href="#" class="navigation__link navigation__link_section-5">Раздел 5</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Контейнер из двух колонок -->
+        <section class="main-container">
+            <aside class="website-info">
+                <p> - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+                <p>Наша цель проста - делать наших клиентов счастливыми, а их путшествия незабываемыми. Любое путшествие начинается с поиска подходящих
+                    билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному
+                    контакт-центру.
+                </p>
+            </aside>
+            <section class="input-container">
+                <header class="progress">
+                    <header class="progress__header">
+                        <p>Заполните форму</p>
+                    </header>
+                    <section class="progress__bar">
+                        <div class="progressbar__block progressbar__block_done progressbar__block_first">1</div>
+                        <div class="progressbar__block progressbar__block_done">2</div>
+                        <div class="progressbar__block progressbar__block_current">3</div>
+                        <div class="progressbar__block progressbar__block_next">4</div>
+                        <div class="progressbar__block progressbar__block_next progressbar__block_last">5</div>
+                    </section>
+                </header>
+                <form class="form-info">
+                    <article class="fieldset-data">
+                        <p class="fieldset-data__legend">Общая информация</p>
+                        <div class="input-data">
+                            <label for="last-name" class="input-data__label">Фамилия</label>
+                            <input type="text" id="last-name" class="input-data__text">
+                        </div>
+                        <div class="input-data">
+                            <label for="first-name" class="input-data__label">Имя</label>
+                            <input type="text" id="first-name" class="input-data__text">
+                        </div>
+                        <div class="input-data">
+                            <label for="patronymic" class="input-data__label">Отчество</label>
+                            <input type="text" id="patronymic" class="input-data__text">
+                        </div>
+                        <div class="input-data">
+                            <label class="input-data__label">Меняли фамилию?</label>
+                            <input type="radio" name="last-name-change" class="radio-btn-input" id="radio-last-name-yes" value="Да">
+                            <label for="radio-last-name-yes" class="radio-btn-label">Да</label>
+                            <input type="radio" name="last-name-change" class="radio-btn-input" id="radio-last-name-no" value="Нет" checked>
+                            <label for="radio-last-name-no" class="radio-btn-label">Нет</label>
+                        </div>
+                        <div class="input-data">
+                            <label class="input-data__label">Пол</label>
+                            <input type="radio" name="gender" value="Муж" id="radio-gender-male" class="radio-btn-input" checked>
+                            <label for="radio-gender-male" class="radio-btn-label">Муж</label>
+                            <input type="radio" name="gender" value="Жен" id="radio-gender-female" class="radio-btn-input">
+                            <label for="radio-gender-female" class="radio-btn-label">Жен</label>
+                        </div>
+                        <div class="input-data">
+                            <label for="relationship" class="input-data__label">Семейное положение</label>
+                            <select id="relationship" class="input-data__text">
+                                <option value="taken" selected>Женат / Замужем</option>
+                                <option value="not-taken">Холост / Не замужем</option>
+                            </select>
+                        </div>
+                        <div class="input-data">
+                            <label for="citizenship" class="input-data__label">Гражданство</label>
+                            <select id="citizenship" class="input-data__text">
+                                <option value="taken" selected>Российская Федерация</option>
+                                <option value="not-taken">Украина</option>
+                                <option value="not-taken">Белоруссия</option>
+                                <option value="not-taken">Казахстан</option>
+                            </select>
+                        </div>
+                        <div class="input-data">
+                            <label class="input-data__label">Дата рождения</label>
+                            <div>
+                                <select id="day" class="input-data__date">
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11" selected>11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                </select>
+                                <select id="month" class="input-data__date">
+                                    <option value="January">Январь</option>
+                                    <option value="February">Февраль</option>
+                                    <option value="March">Март</option>
+                                    <option value="April">Апрель</option>
+                                    <option value="May">Май</option>
+                                    <option value="June selected">Июнь</option>
+                                    <option value="July">Июль</option>
+                                    <option value="August">Август</option>
+                                    <option value="September">Сентябрь</option>
+                                    <option value="October">Октябрь</option>
+                                    <option value="November">Ноябрь</option>
+                                    <option value="December">Декабрь</option>
+                                </select>
+                                <select id="year" class="input-data__date">
+                                    <option value="1973">1973</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1970" selected>1970</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1968">1968</option>
+                                </select>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="empty-flex"></div>
+                        <div class="input-data input-birthplace">
+                            <label for="birthplace" class="input-data__label">Место рождения</label>
+                            <input type="text" id="birthplace" class="input-data__text">
+                            <p class="input-hint">Например, Россия, Комсомольск-на-Амуре</p>
+                        </div>
+                    </article>
+                    <footer class="input-buttons">
+                            <a href="https://yandex.ru/" class="btn btn-big btn-prev"> Назад</a>
+                            <button type="submit" class="btn btn-big btn-next">Далее </button>
+                        </footer>
+                </form>
+            </section>
+        </section>
+        <aside class="website-info_small">
+            <p>TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+            <p>Наша цель проста - делать наших клиентов счастливыми, а их путшествия незабываемыми. Любое путшествие начинается с поиска подходящих
+                билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному
+                контакт-центру.
+            </p>
+        </aside>
+    </body>
+</html>
